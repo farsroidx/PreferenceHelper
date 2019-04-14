@@ -1,4 +1,6 @@
-# PreferenceHelper
+# Easy use of Android SharedPreference
+
+[![](https://jitpack.io/v/farsroidx/PreferenceHelper.svg)](https://jitpack.io/#farsroidx/PreferenceHelper)
 
 # Step 1. Add the JitPack repository to your build file 
 
