@@ -1,7 +1,9 @@
-package ir.farsroidx;
+package ir.farsroidx.application;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import ir.farsroidx.SPUtils;
 
 public class MainActivity extends AppCompatActivity {
 
