@@ -10,7 +10,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SPUtils sp = new SPUtils(this);
+        SPUtils utils = new SPUtils(this);
+        
+        // Write To Preference
+        utils.writeString  ("key" , "text");
+        utils.writeBoolean ("key" , true);
+        utils.writeFloat   ("key" , 1.85F);
+        utils.writeInteger ("key" , 85);
+        utils.writeLong    ("key" , 85L);
 
+        // Read From Preference
+        String   s  = utils.readString  ("key" , "alternative" );
+        boolean b  = utils.readBoolean ("key" , false);
+        float   f  = utils.readFloat   ("key" , 1.02F);
+        int     i  = utils.readInteger ("key" , 0);
+        long    l  = utils.readLong    ("key" , 85L);
     }
 }
