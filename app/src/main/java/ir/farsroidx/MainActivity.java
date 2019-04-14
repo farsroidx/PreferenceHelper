@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SPUtils utils = new SPUtils(this);
-        
+
         // Write To Preference
         utils.writeString  ("key" , "text");
         utils.writeBoolean ("key" , true);
