@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        SPUtils utils = new SPUtils(this);
+        SPUtils utils = SPUtils.getInstance(this);
 
         // Write To Preference
         utils.writeString  ("key" , "text");
