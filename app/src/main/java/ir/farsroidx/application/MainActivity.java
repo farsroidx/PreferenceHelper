@@ -22,10 +22,13 @@ public class MainActivity extends AppCompatActivity {
         utils.writeLong    ("key" , 85L);
 
         // Read From Preference
-        String   s  = utils.readString  ("key" , "alternative" );
+        String  s  = utils.readString  ("key" , "alternative" );
         boolean b  = utils.readBoolean ("key" , false);
         float   f  = utils.readFloat   ("key" , 1.02F);
         int     i  = utils.readInteger ("key" , 0);
         long    l  = utils.readLong    ("key" , 85L);
+
+        utils.remove("key");
+        utils.clearAll();
     }
 }
